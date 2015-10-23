@@ -6,10 +6,11 @@ namespace EntityCodeFirstIndex
     public class Cliente
     {
         public int Id { get; set; }
-        [Index("NomeCliente", IsUnique = true)]        
-        [MaxLength(100)]
+        [Index("NomeCliente", IsUnique = true, Order = 1)]
+        [MaxLength(50)]
         public string Nome { get; set; }
-        public string Cidade { get; set; }
-        public string UF { get; set; }
+        [Index("NomeCliente", IsUnique = true, Order = 2)]
+        [MaxLength(50)]
+        public string Sobrenome { get; set; }
     }
 }

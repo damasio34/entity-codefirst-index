@@ -3,7 +3,7 @@ namespace EntityCodeFirstIndex.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CriacaoBanco : DbMigration
+    public partial class CriandoBanco : DbMigration
     {
         public override void Up()
         {
@@ -12,12 +12,11 @@ namespace EntityCodeFirstIndex.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Nome = c.String(maxLength: 100),
-                        Cidade = c.String(),
-                        UF = c.String(),
+                        Nome = c.String(maxLength: 50),
+                        Sobrenome = c.String(maxLength: 50),
                     })
                 .PrimaryKey(t => t.Id)
-                .Index(t => t.Nome, unique: true, name: "NomeCliente");
+                .Index(t => new { t.Nome, t.Sobrenome }, unique: true, name: "NomeCliente");
             
         }
         
