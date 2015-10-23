@@ -12,8 +12,8 @@ namespace EntityCodeFirstIndex.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Nome = c.String(maxLength: 50),
-                        Sobrenome = c.String(maxLength: 50),
+                        Nome = c.String(nullable: false, maxLength: 50),
+                        Sobrenome = c.String(nullable: false, maxLength: 50),
                     })
                 .PrimaryKey(t => t.Id)
                 .Index(t => new { t.Nome, t.Sobrenome }, unique: true, name: "NomeCliente");

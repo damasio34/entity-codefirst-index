@@ -54,10 +54,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="ClienteTypeConfigurantion.cs" />
     <Compile Include="Contexto.cs" />
-    <Compile Include="Migrations\201510231735447_CriandoBanco.cs" />
-    <Compile Include="Migrations\201510231735447_CriandoBanco.Designer.cs">
-      <DependentUpon>201510231735447_CriandoBanco.cs</DependentUpon>
+    <Compile Include="Migrations\201510231804441_CriandoBanco.cs" />
+    <Compile Include="Migrations\201510231804441_CriandoBanco.Designer.cs">
+      <DependentUpon>201510231804441_CriandoBanco.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -68,8 +69,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201510231735447_CriandoBanco.resx">
-      <DependentUpon>201510231735447_CriandoBanco.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201510231804441_CriandoBanco.resx">
+      <DependentUpon>201510231804441_CriandoBanco.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

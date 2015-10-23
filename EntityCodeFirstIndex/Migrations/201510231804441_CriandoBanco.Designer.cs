@@ -13,7 +13,7 @@ namespace EntityCodeFirstIndex.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201510231735447_CriandoBanco"; }
+            get { return "201510231804441_CriandoBanco"; }
         }
         
         string IMigrationMetadata.Source
